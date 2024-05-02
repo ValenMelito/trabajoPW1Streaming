@@ -1,0 +1,86 @@
+*{
+    padding: 0%;
+    margin: 0;
+}
+
+#centrado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hipervinculo{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.filtros{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+#buscador{
+    position: relative;
+    height: 100%;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 30px; 
+       
+}
+
+#entradaBusqueda{
+    border: 0;
+    font-size: 16px;
+    padding-inline-start: 52px;
+}
+
+#entradaBusqueda:focus{
+    outline: none;
+}
+
+#lupa{
+    height: 100%;
+    left: 12px;
+    position: absolute;
+    top: 0;
+}
+
+.grilla{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    gap: 20px;
+    grid-area: main;
+    align-items: center;
+    justify-items: center;
+    margin: 35px;
+
+    height: 650px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.portadas{  
+    height: 220px;
+    width: 420px;
+    object-fit: cover;
+}
+h1{
+    text-align: center  ;
+}
