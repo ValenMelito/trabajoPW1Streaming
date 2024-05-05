@@ -11,7 +11,7 @@
     <header>
         <h1>Vista Detalles Pelicula</h1>
 
-        <a href="" class="hipervinculo">
+        <a href="../pages/pantallaPrincipal.html" class="hipervinculo">
             <img src="../assets/imagen/home-3-48.png" alt="iconoCasa">
             <span>Home</span>
         </a>
@@ -35,38 +35,52 @@
         
     </header>
 
-    <main>
-        <div class="">
-            <img src="" alt="trailerPelicula">
-            <button>Comenzar</button>
+    <main id="informacionImportante">
+        <div class="contenedorTrailer">
+            <iframe src="https://www.youtube.com/watch?v=6KIxCcnOXi0" class="trailer"></iframe>
+            <button class="comenzar">Comenzar</button>
         </div>
         
-        <div class="detallesPelicula"> 
-            <h3>Titulo:</h3>
-            <span>asdajsdj</span>
-            <h3>Duracion:</h3>
-            <span>90 minutos</span>
-            <h3>Genero:</h3>
-            <span>Comedia</span>
-            <h3>Actores:</h3>
-            <span> Robert De Niro</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos distinctio accusantium modi ex dignissimos 
+        <div class="detalles Pelicula">
+
+            <div class="contenedorTitulo">
+                <h3>Titulo:</h3>
+                <span>asdajsdj</span>
+            </div> 
+            
+            <div class="contenedorDuracion">
+                <h3>Duracion:</h3>
+                <span>90 minutos</span>
+            </div>
+
+            <div class="contenedorGenero">
+                <h3>Genero:</h3>
+                <span>Comedia</span>
+            </div>
+            
+            <div class="contenedorActores">
+                <h3>Actores:</h3>
+                <span> Robert De Niro</span>
+            </div>
+            
+            <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos distinctio accusantium modi ex dignissimos 
             quaerat incidunt aperiam eligendi, sint nisi quod libero nulla rerum, 
             laboriosam cupiditate quibusdam repellat iure voluptatum?</p>
 
         </div>
+    </main>
 
-        <div>
+        <footer class="similares">
             <h2>Similares</h2>
 
             <div class="recomendaciones">
-                <a href="vistaDetallesPelicula.html"><img src="" alt="foto1"></a>
-                <a href="vistaDetallesPelicula.html"><img src="" alt="foto2"></a>
-                <a href="vistaDetallesPelicula.html"><img src="" alt="foto3"></a>
-                <a href="vistaDetallesPelicula.html"><img src="" alt="foto4"></a>   
-                <a href="vistaDetallesPelicula.html"><img src="" alt="foto5"></a>
+                <a href="vistaDetallesPelicula.html"><img src="../assets/imagen/avengersPoster.jpeg" alt="foto1" class="fotoSimilares"></a>
+                <a href="vistaDetallesPelicula.html"><img src="../assets/imagen/lalalandPoster.jpeg" alt="foto2" class="fotoSimilares"></a>
+                <a href="vistaDetallesPelicula.html"><img src="../assets/imagen/harryPotterPoster.jpeg" alt="foto3" class="fotoSimilares"></a>
+                <a href="vistaDetallesPelicula.html"><img src="../assets/imagen/oppenherimerPoster.jpeg" alt="foto4" class="fotoSimilares"></a>   
+                <a href="vistaDetallesPelicula.html"><img src="../assets/imagen/shrekPoster.jpeg" alt="foto5" class="fotoSimilares"></a>
             </div>
-        </div>
-    </main>
+        </footer>
+    
 </body>
 </html>
