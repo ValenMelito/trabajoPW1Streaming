@@ -4,31 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/contraseñaEinicio.css">
 </head>
 <body>
-    
-    <div><img src="" alt="fondo de presentacion"></div>
+    <header>
+        <h1>UNFLIX</h1>
+    </header>
+    <div class="contenedor">
+        <form action="pages/pantallaPrincipal.html" method="post">
+            <h2>Iniciar Sesión</h2>
 
-    <div id="centrado">
-      
-        <div>
-            <span>Nombre de usuario</span>
-            <input type="text" name="" id="">
+            <div class="form-group">
+                <label for="usuario"> Nombre de usuario: </label>
+                <input  type="text" id="usuario" names="usuario" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Contraseña"> Contraseña</label>
+                <input  type="password" id="contraseña" name="contraseña" required>
+            </div>
+
+            <button type="submit">Inciar Sesión</button>
+        </form>
+        <div class="registrate">
+            <p>¿Olvidaste tu contraseña?</p>
+            <button type="button"> 
+                <a href="pages/recuperarContraseña.html" > Recuperar mi contraseña</a>
+            </button>
         </div>
-
-        <div>
-            <span>Contraseña</span>
-            <input type="text">
+        <div class="registrate">
+            <p>
+                ¿Aún no tienes cuenta? 
+                    <button type="submit" formaction="/proyecto_ejemplo/pages/Registrate.html" >
+                        <a href="pages/registarse.html">Registrate aqui</a>
+                    </button>
+                    
+            </p>
         </div>
-
-        <button type="button"><a href="pages/pantallaPrincipal.html">iniciar sesion</a></button>
-
-        <p><a href="pages/pantallaPrincipal.html">Recuperar contraseña</a></p>
-
-        <p><a href="pages/pantallaPrincipal.html">Registrarse</a></p>
-    </div>
-
-    
+        
 </body>
 </html>

@@ -11,34 +11,34 @@
     <header>
         <h1>Vista Detalles Serie</h1>
 
-        <a href="" class="hipervinculo">
+        <a href="../pages/pantallaPrincipal.html" class="hipervinculo">
             <img src="../assets/imagen/home-3-48.png" alt="iconoCasa">
-            <span>Home</span>
+            <span class="subtitulo">Home</span>
         </a>
         
 
         <a href="" class="hipervinculo">
             <img src="../assets/imagen/film-48.png" alt="iconoSeries">
-            <span>Series</span>
+            <span class="subtitulo">Series</span>
         </a>   
      
         <a href="" class="hipervinculo">
             <img src="../assets/imagen/film-48.png" alt="iconoPeliculas">
-            <span>Pelicula</span>  
+            <span class="subtitulo">Pelicula</span>  
         </a>
 
 
         <a href="vistaPerfil.html" class="hipervinculo">
             <img src="../assets/imagen/user-48.png" alt="iconoPerfil">
-            <span>Perfil</span>
+            <span class="subtitulo">Perfil</span>
         </a>    
         
     </header>
 
-    <main>
-        <div class="">
-            <img src="" alt="trailerPelicula">
-            <button>Comenzar</button>
+    <main id="informacionImportante">
+        <div class="contenedorTrailer">
+            <iframe src="https://www.youtube.com/watch?v=6KIxCcnOXi0" class="trailer"></iframe>
+            <button class="comenzar">Comenzar</button>
         </div>
         
         <div class="detallesPelicula"> 
@@ -48,12 +48,12 @@
             <h3>Temporada:</h3>
             <select name="" id="">
                 <option value="opcionPrincipal" disabled selected>Seleccionar</option>
-                <option value="accion">accion</option>
-                <option value="romance">romance</option>
-                <option value="documental">documental</option>
-                <option value="humor">humor</option>
-                <option value="misterio">misterio</option>
-                <option value="terror">terror</option>
+                <option value="accion">1</option>
+                <option value="romance">2</option>
+                <option value="documental">3</option>
+                <option value="humor">4</option>
+                <option value="misterio">5</option>
+                <option value="terror">6</option>
             </select>
 
             <h3>Capitulo</h3>
@@ -73,23 +73,24 @@
             <h3>Actores:</h3>
             <span> Robert De Niro</span>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos distinctio accusantium modi ex dignissimos 
+            <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos distinctio accusantium modi ex dignissimos 
             quaerat incidunt aperiam eligendi, sint nisi quod libero nulla rerum, 
             laboriosam cupiditate quibusdam repellat iure voluptatum?</p>
 
         </div>
-
-        <div>
-            <h2>Similares</h2>
-
-            <div class="recomendaciones">
-                <a href="vistaDetallesPelicula.html"><img src="" alt="foto1"></a>
-                <a href="vistaDetallesPelicula.html"><img src="" alt="foto2"></a>
-                <a href="vistaDetallesPelicula.html"><img src="" alt="foto3"></a>
-                <a href="vistaDetallesPelicula.html"><img src="" alt="foto4"></a>   
-                <a href="vistaDetallesPelicula.html"><img src="" alt="foto5"></a>
-            </div>
-        </div>
     </main>
+
+    <footer class="similares">
+        <h2>Similares</h2>
+
+        <div class="recomendaciones">
+            <a href="vistaDetallesPelicula.html"><img src="../assets/imagen/avengersPoster.jpeg" alt="foto1" class="fotoSimilares"></a>
+            <a href="vistaDetallesPelicula.html"><img src="../assets/imagen/lalalandPoster.jpeg" alt="foto2" class="fotoSimilares"></a>
+            <a href="vistaDetallesPelicula.html"><img src="../assets/imagen/harryPotterPoster.jpeg" alt="foto3" class="fotoSimilares"></a>
+            <a href="vistaDetallesPelicula.html"><img src="../assets/imagen/oppenherimerPoster.jpeg" alt="foto4" class="fotoSimilares"></a>   
+            <a href="vistaDetallesPelicula.html"><img src="../assets/imagen/shrekPoster.jpeg" alt="foto5" class="fotoSimilares"></a>
+        </div>
+    </footer>
+    
 </body>
 </html>

@@ -1,0 +1,133 @@
+body{
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #790808;
+    color: rgb(248, 211, 211);
+}
+
+header{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.contenedor{
+    background-color: rgb(173, 25, 25);
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 01);
+}
+
+h1{
+    text-align: center;
+}
+h3{ 
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.register-form, .payment-methods{
+    background-color: rgb(173, 25, 25);
+    padding: 50px;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 01);
+}
+
+.register-form h2, .payment-methods h2{
+    text-align: center;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="radio"]{
+    width: 97%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"],button[type="button"]{
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 6, 6, 0.958);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+button[type="submit"]:hover{
+    background-color: #7f0707eb;
+}
+
+#boton1, #boton2:hover{
+    width: 100%;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e71414;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+.registro{
+    background-color: rgb(173, 25, 25);
+    max-width: 400px;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 01);
+} 
+
+a{
+    color: #fff;
+    text-decoration: none;
+    ;
+}
+
+.columna{
+    display:inline-table;
+}
+
+footer{
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 600px){
+    .contenedor{
+        max-width: 90%;
+    }
+}
