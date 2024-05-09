@@ -140,6 +140,9 @@ option{
     height: 650px;
     overflow: scroll;
     overflow-x: hidden;
+    scrollbar-color: #D3D3D3 rgba(0, 0, 0, 0);
+    scrollbar-width: 9px;
+    
 }
 
 .portadas{  
@@ -196,7 +199,10 @@ option{
     width: 100%;
     overflow: auto;
     padding-bottom: 7px;/*este padding es para mover la barra un poco para abajo*/
+    scrollbar-color: #D3D3D3 rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
 }
+
 
 .fotoSimilares{
     width: 450px;
@@ -208,4 +214,27 @@ option{
 }
 h2{
     font-size: 30px;
+}
+
+@media (max-width:600px){
+
+h1{
+    margin: 5px 0px;
+}
+.hipervinculo{
+    flex-direction: column;
+}
+.icono{
+    width: 30px;
+    height: 30px
+}
+.subtitulo{
+    margin: 0px;
+}
+.filtros{
+    flex-direction: column-reverse;
+}
+#buscador{
+    margin-bottom: 5px;
+}
 }
