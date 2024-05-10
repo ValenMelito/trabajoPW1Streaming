@@ -3,10 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/vistaPerfil.css">
+    <title>UNFLIX Perfil</title>
 </head>
 <body>
-    <h1>vista perfil</h1>
+    <header>
+        <h1>Vista Perfil</h1>
+
+        <a href="../pages/pantallaPrincipal.html" class="hipervinculo">
+            <img src="../assets/imagen/home-3-48.png" alt="iconoCasa" class="icono">
+            <span class="subtitulo">Home</span>
+        </a>
+        
+
+        <a href="" class="hipervinculo">
+            <img src="../assets/imagen/film-48.png" alt="iconoSeries" class="icono">
+            <span class="subtitulo">Series</span>
+        </a>   
+     
+        <a href="" class="hipervinculo">
+            <img src="../assets/imagen/film-48.png" alt="iconoPeliculas" class="icono">
+            <span class="subtitulo">Pelicula</span>  
+        </a>
+
+
+        <a href="vistaPerfil.html" class="hipervinculo">
+            <img src="../assets/imagen/user-48.png" alt="iconoPerfil" class="icono">
+            <span class="subtitulo">Perfil</span>
+        </a>   
+        
+    </header>
+
+    <main>
+        <div class="fotoYNombre">
+            <img src="../assets/imagen/logounflix.png" width="300px" height="150px">
+            <span>Nombre de usuario</span>
+        </div>
+
+        <div class="datosUsuario">
+            <div class="espaciado">
+                <span>E-mail:</span>
+                <span>usuario@gmail.com</span>
+            </div>
+
+            <div class="espaciado">
+                <span>Contraseña:</span>
+                <span>*************</span>
+            </div>
+
+            <div class="espaciado">
+                <label for="nuevaContraseña">Nueva Contraseña:</label>
+                <input type="password" placeholder="Ingrese nueva contraseña" name="nuevaContraseña">
+            </div>
+
+            <div class="espaciado">
+                <label for="">Repetir contraseña: </label>
+                <input type="password" placeholder="Ingrese nueva contraseña">
+            </div>
+        </div>
+
+        <form class="metodosDePago">
+            <h4>Método de Pago</h4>
+
+                <div class="opcionDePago">
+                    <div>
+                        <input type="radio" value="Tarjeta de Crédito" id="tarjeta" name="tipoMetodo">
+                        <label for="tarjeta">Tarjeta de Crédito</label>
+                    </div>
+
+                    <div class="subOpcion">
+                        <input type="text" placeholder="Numero de tarjeta">
+                        <input type="text" placeholder="XXX" pattern="[0-9]{3}" maxlength="3" style="width:50px;">
+                    </div>
+                </div>
+
+                <div class="opcionDePago">
+                    <div>
+                        <input type="radio" value="Cupon" id="cupon" name="tipoMetodo">
+                        <label for="cupon">Cupón de Pago</label>
+                    </div>
+
+                    <div class="subOpcion">
+                        <input type="radio" value="pagoFacil" id="pagoFacil" name="opcionDePago">
+                        <label for="pagoFacil">Pago Fácil</label>
+
+                        <input type="radio" value="rapiPago" id="rapiPago" name="opcionDePago">
+                        <label for="rapiPago">Rapi Pago</label>
+                    </div>
+                </div>
+                
+                <div class="opcionDePago">
+                    <div>
+                        <input type="radio" value="transferencia" id="transferencia" name="tipoMetodo">
+                        <label for="transferencia">Transferencia Bancaria</label>
+                    </div>
+
+                    <p class="subOpcion">CBU: 83774749374027916269</p>
+                
+                </div>
+    </main>
+
+    <footer>
+        <button type="submit"> Guardar cambios</button>
+        <button type="button"> Cancelar suscripcion</button>
+    </footer>
+    
 
 </body>
 </html>

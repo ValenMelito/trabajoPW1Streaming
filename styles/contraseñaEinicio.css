@@ -99,7 +99,9 @@ button[type="submit"]:hover{
     transition: background-color 0.3s ease;
 }
 
-
+.link{
+    padding: 10px 60px;
+}
 
 
 .registro{
