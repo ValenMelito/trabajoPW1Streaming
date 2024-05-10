@@ -243,4 +243,11 @@ h1{
     flex-direction: column;
     height: 600px;
 }
+.portadas{
+    height: 190px;
+    width: 320px;
+}
+.portadas:hover{
+    display: none;
+}
 }
